@@ -5,22 +5,24 @@ Demo repo to illustrate how to extract CSS from different named SASS files and c
 For example, say you have a project with the following strucutre:
 
 ```bash
-├── app
+├── assets
 │   ├── css
-│   │   ├── **/*.css
-│   ├── favicon.ico
-│   ├── images
-│   ├── index.html
+│   │   ├── editor.blocks.css
+│   │   ├── style.blocks.css
 │   ├── js
-│   │   ├── **/*.js
-│   └── partials/template
-├── dist (or build)
-├── node_modules
-├── bower_components (if using bower)
-├── test
-├── Gruntfile.js/gulpfile.js
-├── README.md
-├── package.json
-├── bower.json (if using bower)
-└── .gitignore
+│   │   ├── editor.blocks.js
+├── blocks
+│   ├── block1
+│   │   ├── editor.scss
+│   │   ├── style.scss
+│   │   ├── index.js
+│   ├── block2
+│   │   ├── editor.scss
+│   │   ├── style.scss
+│   │   ├── index.js
+│   ├── block3
+│   │   ├── editor.scss
+│   │   ├── style.scss
+│   │   ├── index.js
+│   ├── index.js
 ```
