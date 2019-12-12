@@ -33,3 +33,9 @@ When webpack runs it should:
 * Concatenate and compile all `editor.scss` files to `./assets/css/editor.blocks.css`.
 
 At the moment, it kind of works but instead of compiling all `style.scss` and `editor.scss` files it seems to grab the SASS from the last block only. This indicates that `style.blocks.css` and `editor.blocks.css` are continously being overwritten which is incorrect.
+
+# To Run the webpack Script
+
+* Clone the repo.
+* `npm init`
+* `npm run build`
