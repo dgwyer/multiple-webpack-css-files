@@ -1,0 +1,23 @@
+{
+  "name": "multiple-webpack-css-files",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "blocks/index.js",
+  "scripts": {
+    "dev": "cross-env webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack -p"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.3.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
