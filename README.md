@@ -2,7 +2,7 @@
 
 Demo repo to illustrate how to extract CSS from different named SASS files and compile them down to specific CSS files.
 
-For example, say you have a project with the following strucutre and `./blocks/index.js` as the main entry point:
+For example, say you have a project with the following structure and `./blocks/index.js` as the main entry point:
 
 ```bash
 ├── assets
