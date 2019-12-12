@@ -32,7 +32,7 @@ When webpack runs it should:
 * Concatenate and compile all `style.scss` files to `./assets/css/style.blocks.css`.
 * Concatenate and compile all `editor.scss` files to `./assets/css/editor.blocks.css`.
 
-At the moment, it kind of works but instead of concatenating and compiling all `style.scss` and `editor.scss` files it seems to grab the SASS from the last block only. This indicates that `style.blocks.css` and `editor.blocks.css` are continously being overwritten which is incorrect.
+At the moment, it kind of works but instead of concatenating and compiling all `style.scss` and `editor.scss` files it seems to grab the SASS from the last block folder only. This indicates that `style.blocks.css` and `editor.blocks.css` are continously being overwritten which is incorrect.
 
 # To Run the webpack Script
 
