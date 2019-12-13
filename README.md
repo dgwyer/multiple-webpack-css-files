@@ -36,6 +36,10 @@ When webpack runs it should:
 
 At the moment, instead of concatenating and compiling all `style.scss` and `editor.scss` files it seems to grab the SASS from the LAST block folder only. This indicates that `style.blocks.css` and `editor.blocks.css` are continuously being overwritten which is incorrect.
 
+Here's a visual of what's currently happening vs the expected behavior.
+
+
+
 # To Run the webpack Script
 
 * Clone the repo.
