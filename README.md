@@ -38,7 +38,7 @@ At the moment, instead of concatenating and compiling all `style.scss` and `edit
 
 Here's a visual of what's currently happening vs the expected behavior.
 
-
+![current vs expected behavior](screenshots/webpack-multiple-css-files.png)
 
 # To Run the webpack Script
 
