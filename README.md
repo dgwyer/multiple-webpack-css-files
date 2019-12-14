@@ -34,7 +34,7 @@ When webpack runs it:
 * Concatenates and compiles all `style.scss` files to `./assets/css/block.styles.css`.
 * Concatenates and compiles all `editor.scss` files to `./assets/css/editor.styles.css`.
 
-![current vs expected behavior](screenshots/webpack-multiple-css-files.png)
+![current vs expected behavior](screenshots/webpack-multiple-css-files-output.png)
 
 The only caveat to this working properly was that during the bundling process two extra JS files were being emitted. This apparently is a known issue in webpack 3/4 and is supposedly working as expected in webpack 5. In the meantime I'm using the `ignore-emit-webpack-plugin' package to remove the unecessary JS files from the bundle.
 
