@@ -1,10 +1,8 @@
 # Multiple webpack CSS Files
 
-Demo repo to attempt extracting CSS from different named SASS files and compile them down to specific CSS files.
+Demo project to extract CSS from different named SASS files (`style.scss` and `editor.scss`) and compile them down to specific CSS files (`block.styles.css` and `editor.styles.css`).
 
 Take a look at the following project which has the project source code inside the `./blocks` folder and the compiled code in the `./assets` folder.
-
-The project has a single entry point is `./blocks/index.js` which includees each of the other `index.js` files inside each block. Each block `index.js` file includes the `editor.sccs` and `style.scss` for that block.
 
 ```bash
 ├── assets
@@ -29,16 +27,16 @@ The project has a single entry point is `./blocks/index.js` which includees each
 │   ├── index.js
 ```
 
-When webpack runs it should:
+The project has a single entry point is `./blocks/index.js` which includes each of the other `index.js` files inside each block. Each block `index.js` file in turn includes the `editor.sccs` and `style.scss` for that block.
 
-* Concatenate and compile all `style.scss` files to `./assets/css/style.blocks.css`.
-* Concatenate and compile all `editor.scss` files to `./assets/css/editor.blocks.css`.
+When webpack runs it:
 
-At the moment, instead of concatenating and compiling all `style.scss` and `editor.scss` files it seems to grab the SASS from the LAST block folder only. This indicates that `style.blocks.css` and `editor.blocks.css` are continuously being overwritten which is incorrect.
-
-Here's a visual of what's currently happening vs the expected behavior.
+* Concatenates and compiles all `style.scss` files to `./assets/css/block.styles.css`.
+* Concatenates and compiles all `editor.scss` files to `./assets/css/editor.styles.css`.
 
 ![current vs expected behavior](screenshots/webpack-multiple-css-files.png)
+
+The only caveat to this working properly was that during the bundling process two extra JS files were being emitted. This apparently is a known issue in webpack 3/4 and is supposedly working as expected in webpack 5. In the meantime I'm using the `ignore-emit-webpack-plugin' package to remove the unecessary JS files from the bundle.
 
 # To Run the webpack Script
 
